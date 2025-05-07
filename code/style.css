@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #150101;
+    color: #ffffff;
+}
+.container {  
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1169px;
+}
+
+p + p {
+  margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.headerNavItemHome {
+    font-weight: 700;
+    font-size: 15px;
+}
+.header {
+  position: relative;
+  z-index: 10;
+  background-color: #150101;
+}
+.header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #150101;
+}
+
+.headerNavList {
+  font-weight: 300;
+  font-size: 14px;
+
+  transition: opacity 0.3s;
+}
+
+.headerNavItem:hover, .headerNavItemHome:hover {
+  opacity: 0.8;
+}
+.headerNavItem {
+  opacity: 0.7;
+}
+
+.headerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  background-color: #F6762C;
+  width: 165px;
+  height: 49px;
+  border-radius: 5px;
+
+  transition: opacity 0.3s;
+}
+
+.headerButton:hover {
+  opacity: 0.8;
+}
+.headerLogo {
+ transition: opacity 0.3s;
+}
+.headerLogo:hover {
+  opacity: 0.8;
+}
+
+/* Welcome */
+
+.welcome{
+  box-sizing: border-box;
+  min-height: 100vh;
+  
+  margin-top: -100px;
+  padding: 240px 0px;
+
+
+  background-image: url('../images/welcome-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.welcomeInnerText {
+  width: 555px;
+    
+}
+h1, h2, h3 ,h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+.welcomeMinititle {
+  margin-bottom: 7px;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.welcomeTitle {
+  margin-bottom: 40px;
+  font-size: 57.33px;
+  font-weight: 500;
+}
+
+.welcomeSubtitle {
+  margin-bottom: 40px;
+  font-size: 18px;
+  opacity: 0.7; 
+  font-weight: 400;
+}
+
+/* Food List */
+.foodList p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.7;
+}
+.foodList h4{
+  font-size: 20px;
+  font-weight: 500;
+}
+.foodListImage {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 25px
+}
+.foodList {
+    min-height: 543px;
+    background-color: #181717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foodList .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+.foodListItem {
+  background-color: #312F30;
+  border-radius: 10px;
+  width: 262px;
+  height: 323px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+.foodListItem:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1150px) {
+  .foodList .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Order */
+
+.order {
+  display: flex;
+  align-items: center;
+  background-color: #312F30;
+  min-height: 543px;
+}
+.order h3 {
+  margin-bottom: 15px;
+  font-size: 44.2px;
+  font-weight: 500;
+}
+.order p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+.orderPrice {
+  color: #F6762C;
+  font-size: 20px;
+  letter-spacing: 10%;
+}
+.orderSalePrice {
+  margin-left: 5px;
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 500;
+  color: #F6762C;
+  margin-bottom: 15px;
+}
+.order .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.orderImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+.orderText {
+  display: flex;
+  flex-direction: column;
+  width: 371px;
+  height: 214px;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+/* Product Section */
+
+.product {
+  background-color: #181717;
+}
+.product .container {
+}
+.productContent {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+
+}
+.productContent h4 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.productContent p {
+  margin-bottom: 11px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.productContentLeft, .productContentRight {
+  display: flex;
+  flex-direction: column;
+}
+.productContentLeft {
+  margin-right: 15px;
+
+}
+.productContentRight {
+  margin-left: 15px;
+
+}
+.productContentItem {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 555px;
+  height: 300px;
+}
+.productContentItem:hover {
+  opacity: 0.8;
+}
+.productContentItemDairyQueen {
+  background-image: url(../images/product-1.jpg);
+  margin-bottom: 30px;
+}
+.productContentItemPizzaHut {
+  background-image: url(../images/product-2.jpg);
+  margin-bottom: 30px;
+}
+.productContentItemBurgerKing {
+  background-image: url(../images/product-3.jpg);
+}
+.productContentItemPapaJohns {
+  background-image: url(../images/product-4.jpg);
+}
+.productContentItemText .headerButton {
+  margin-top: 11px;
+  width: 141px;
+  height: 39px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.productPrice, .productPriceOld {
+  color: #F6762C;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.productPriceOld {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.productContentItemText {
+  width: 250px;
+  height: 175px;
+}
+.RightContentText {
+  margin-left: 50px;
+}
+.LeftContentText {
+  margin-right: 7px;
+}
+.productContentItemDairyQueen, .productContentItemBurgerKing{
+  justify-content: flex-end;
+}
