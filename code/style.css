@@ -247,13 +247,12 @@ h1, h2, h3 ,h4, h5, h6 {
 .product {
   background-color: #181717;
 }
-.product .container {
-}
 .productContent {
+  gap: 30px;
   padding-top: 150px;
   padding-bottom: 150px;
   display: flex;
-
+  flex-wrap: wrap;
 }
 .productContent h4 {
   margin-bottom: 20px;
@@ -267,16 +266,9 @@ h1, h2, h3 ,h4, h5, h6 {
   opacity: 0.7;
 }
 .productContentLeft, .productContentRight {
+  gap: 30px;
   display: flex;
   flex-direction: column;
-}
-.productContentLeft {
-  margin-right: 15px;
-
-}
-.productContentRight {
-  margin-left: 15px;
-
 }
 .productContentItem {
   display: flex;
@@ -290,11 +282,9 @@ h1, h2, h3 ,h4, h5, h6 {
 }
 .productContentItemDairyQueen {
   background-image: url(../images/product-1.jpg);
-  margin-bottom: 30px;
 }
 .productContentItemPizzaHut {
   background-image: url(../images/product-2.jpg);
-  margin-bottom: 30px;
 }
 .productContentItemBurgerKing {
   background-image: url(../images/product-3.jpg);
@@ -331,4 +321,73 @@ h1, h2, h3 ,h4, h5, h6 {
 }
 .productContentItemDairyQueen, .productContentItemBurgerKing{
   justify-content: flex-end;
+}
+
+@media (max-width: 1180px) {
+  .productContent{
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+/* Feedback */
+
+.Feedback {
+  background-color: #181717;
+}
+.Feedback .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.FeedbackIcon{
+  margin-top: 30px;
+  width: 47;
+  height: 46px;
+  margin-bottom: 37px;
+}
+.Feedback h4 {
+  margin-bottom: 2px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.FeedbackTextMain{
+  margin-bottom: 27px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.FeedbackTextSmall {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.Feedback .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.FeedbackText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 368px;
+}
+
+.download {
+  background-color: #312F30;
+}
+.download .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download h1{
+  font-size: 40px;
+  font-weight: 500;
 }
