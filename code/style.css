@@ -24,7 +24,7 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
-ul {
+.headerNav ul {
     display: flex;
     gap: 30px;
     list-style: none;
@@ -377,6 +377,8 @@ h1, h2, h3 ,h4, h5, h6 {
   max-width: 368px;
 }
 
+/* Download */
+
 .download {
   background-color: #312F30;
 }
@@ -390,4 +392,74 @@ h1, h2, h3 ,h4, h5, h6 {
 .download h1{
   font-size: 40px;
   font-weight: 500;
+}
+.download .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: #1C1C1C;
+  min-height: 381px;
+}
+footer .container{
+  width: 100%;
+}
+.footerAll{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+.footerContactInfo {
+}
+.footerContactInfo, .footerLinks,  .footerNetworks {
+}
+.footerInternetLink, .footerMail{
+  display: flex;
+  font-size: 12px;
+  opacity: 0.8;
+}
+.footerInternetLink {
+  margin-top: -10px;
+}
+.footerInternetLink p, .footerMail p{
+  margin-left: 10px;
+}
+.footerLogo {
+  margin-top: 15px;
+  width: 70px;
+  height: 70px;
+}
+
+.footerLinksItem ul li {
+  margin-bottom: 15px;
+}
+.footerLinksItem ul {
+  list-style: none;
+}
+
+.footerLinksText{
+  font-size: 12px;
+  opacity: 0.7;
+}
+.footerLinksMainText {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footerNetworks {
+ margin-top: 15px;
+ margin-bottom: 16px;
+
+}
+.footerNetworksIcons {
+  margin-top: 16px;
+  width: 90px;
+  display: flex;
+  justify-content: space-around;
 }
