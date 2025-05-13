@@ -91,6 +91,7 @@ a {
 /* Welcome */
 
 .welcome{
+  position: relative;
   box-sizing: border-box;
   min-height: 100vh;
   
@@ -103,6 +104,10 @@ a {
   background-size: cover;
   background-position: center;
 
+}
+.welcome > * {
+    position: relative;
+    z-index: 1;
 }
 .welcomeInnerText {
   width: 555px;
@@ -183,6 +188,7 @@ h1, h2, h3 ,h4, h5, h6 {
   .foodList .container {
     margin-top: 40px;
     margin-bottom: 40px;
+    justify-content: space-evenly;
   }
 }
 
@@ -291,6 +297,15 @@ h1, h2, h3 ,h4, h5, h6 {
 }
 .productContentItemPapaJohns {
   background-image: url(../images/product-4.jpg);
+}
+.productContentItemBurgerKing, .productContentItemPizzaHut, .productContentItemPapaJohns, .productContentItemDairyQueen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    position: relative;
+}
+.productContentItem > *{
+  z-index: 1;
 }
 .productContentItemText .headerButton {
   margin-top: 11px;
@@ -422,9 +437,9 @@ footer .container{
   opacity: 0.8;
 }
 .footerInternetLink {
-  margin-top: -10px;
+  margin-top: 5px;
 }
-.footerInternetLink p, .footerMail p{
+.footerInternetLink a, .footerMail a{
   margin-left: 10px;
 }
 .footerLogo {
@@ -458,4 +473,124 @@ footer .container{
   width: 90px;
   display: flex;
   justify-content: space-around;
+}
+
+@media (max-width: 1179px) {
+    .Feedback .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .productContent {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 1080px) {
+  .welcome::before {
+    z-index: 0;
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+@media (max-width: 850px) {
+  .order .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderText {
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .header .container{
+    justify-content: normal;
+    gap: 20px;
+  }
+  .header .container .headerButton {
+    display: none;
+  }
+  .headerNav {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+  }
+  .headerNav ul {
+    flex-wrap: wrap;
+  }
+  .headerNavList{
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .container .headerLogo.no-center {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 585px) {
+  .welcome .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .foodList .container {
+    justify-content: center;
+  }
+  .product .container {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .productContentLeft, .productContentRight {
+    width: 100%;
+  }
+  .productContentItem {
+    width: 100%;
+  }
+  .productContentItemText {
+  height: 175px;
+}
+}
+@media (max-width: 550px) {
+  .productContentItem::before{
+    z-index: 0;
+    content: '';
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .productContentItem{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .productContentItemText {
+    margin: 0;
+    align-items: center;
+  }
+  .productContentItemText .headerButton {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 380px) {
+  .Feedback .container img{
+    width: 100%;
+  }
+}
+@media (max-width: 293px) {
+  .footerLinksItem > *{
+    margin: 0;
+    padding: 0;
+  }
+ .footerAll{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+  
 }
